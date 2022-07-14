@@ -173,7 +173,7 @@ body{
 }
 
 /* --------------- CSS Grilla Menú ----------------- */
-.grilla__item{
+/* .grilla__item{
     border: solid 1px rgb(47, 95, 79);
     border-radius: 20px;
     display: flex;
@@ -189,8 +189,7 @@ body{
     grid-auto-rows: minmax(250px, auto);
     gap: 20px;
     grid-auto-flow: dense;
-
-}
+} */
 
 @media screen and (min-width: 200px){
     .wide{
