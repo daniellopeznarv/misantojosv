@@ -12,19 +12,19 @@ a{
 }
 
 .header{
-    /* background-color: #006E7F; */
+    background-color: #006E7F;
     /* position: sticky; Permite dejar el menú pegado */ 
     top: 0;
     left: 0px;
     height:fit-content;
 }
 
-/* .header__logo__imagen img{
+.header__logo__imagen img{
     width: 100%; 
-} */
+}
 
 .header__menu__lista__item{ 
-    font-size: 30px;
+    font-size: 25px;
     display: inline-block;
     margin: 15px;
     letter-spacing: 1px;
@@ -38,9 +38,8 @@ a{
     height: fit-content;
     background-color: #006E7F;
     margin: 0 auto;
+    width: fit-content;
     font-family: 'Shadows Into Light';
-    text-align: center;
-
 }
 
 li a:hover{ /*Sirve para ponerle sombra cuando pase el mouse*/
