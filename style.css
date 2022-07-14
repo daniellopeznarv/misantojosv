@@ -94,11 +94,13 @@ body{
 .footer{
     background-color: #006E7F;
     height:fit-content;
+
 }
 
 .footer__lista img{
     width: 50px;
     margin-left: 5px;
+    
 }
 
 .footer__lista{
