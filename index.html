@@ -13,14 +13,16 @@
 	<link rel="stylesheet" href="style.css"><!-- Link a css -->
 </head>
 
-<body background="./imagenes/fondo1.jpg">
-  <header class="header"><!-- Encabezado del sitio -->
+<body >
+  <header class="header container-fluid"><!-- Encabezado del sitio -->
 		
 		<!-- <section class="header__logo"> NavBar CSS
 			<a class="header__logo__imagen" href="#">
 				<img src="./imagenes/encabezado.jpg" alt="Logo del sitio">
 			</a>
 		</section> -->
+	</header>
+
 	<nav>
 		<div class="container"> <!--NavBar Boostrap-->
 			<a class="navbar-brand" href="#">
@@ -30,7 +32,8 @@
 	</nav>
 	
 		<section class="header__menu">
-			<nav><!--Barra de navegación (Unorder list)-->
+			<!--Barra de navegación (Unorder list)-->
+			<!-- <nav>
 				<ul class="header__menu__lista">
 					<li class="header__menu__lista__item"><a href="./index.html">Home</a></li>
 					<li class="header__menu__lista__item"><a href="./paginas/menu.html">Menú</a></li>
@@ -38,21 +41,46 @@
 					<li class="header__menu__lista__item"><a href="./paginas/eventos.html">Eventos</a></li>
 					<li class="header__menu__lista__item"><a href="./paginas/contacto.html">Contacto</a></li>
 				</ul>
-			</nav>
+			</nav> -->
 
-			
+			<nav class="header__menu__lista navbar navbar-expand-lg navbar-light ">
+				<div class="divheader__menu__lista container-fluid d-flex">
+				  
+				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class=" collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav header__menu__lista">
+					  <li class="nav-item header__menu__lista__item">
+						<a class="nav-link" aria-current="page" href="./index.html">Home</a>
+					  </li>
+					  <li class="nav-item header__menu__lista__item">
+						<a class="nav-link" href="./paginas/menu.html">Menú</a>
+					  </li>
+					  <li class="nav-item header__menu__lista__item">
+						<a class="nav-link" href="./paginas/Delivery-retiro.html">Delivery - PickUp</a>
+					  </li>
+					  <li class="nav-item header__menu__lista__item">
+						<a class="nav-link" href="./paginas/eventos.html">Eventos</a>
+					  </li>
+					  <li class="nav-item header__menu__lista__item">
+						<a class="nav-link" href="./paginas/contacto.html">Contacto</a>
+					  </li>
+					</ul>
+				  </div>
+				</div>
+			  </nav>
 
 		</section>
-	</header>
-
+	
 	<main class="main"><!-- Contenido del sitio -->
 		
 		<section class="main__comidas">
 			<h2>NUESTRA HISTORIA</h2>
-				<div class="flex_container">
+				<div class="flex_container row-1">
 					<!-- <div><img id="imagen_pizza" src="./imagenes/pizza1.jpeg" alt="Imagen de la Pizza"></div> -->
 					
-					<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel"> <!--Carrusel de fotos-->
+					<div id="carouselExampleInterval" class="carousel slide col-6" data-bs-ride="carousel"> <!--Carrusel de fotos-->
 						<div class="carousel-inner">
 						  <div class="carousel-item active" data-bs-interval="4000">
 							<img src="./imagenes/heladomenu1.png" class="d-block w-100" alt="Helado">
@@ -72,10 +100,11 @@
 						  <span class="carousel-control-next-icon" aria-hidden="true"></span>
 						  <span class="visually-hidden">Next</span>
 						</button>
-					  </div>
-					<div class="flex_container_texto">Somos un lugar dedicado a brindar  experiencias   a niños, jóvenes y adultos a través de nuestros productos.
-						Estamos desde el año 2010 ofreciendo los mejores helados, pizzas y ensaladas de frutas de toda la región.<br>
-						<br><p>Te invitamos a que vengas a nuestro local o realices tu pedido, ya que ofrecemos servicio de delivery-pickUp.</p>
+					</div>
+					<div class="flex_container_texto col-6">
+						<p>Somos un lugar dedicado a brindar  experiencias   a niños, jóvenes y adultos a través de nuestros productos.
+						Estamos desde el año 2010 ofreciendo los mejores helados, pizzas y ensaladas de frutas de toda la región.</p>
+						<p>Te invitamos a que vengas a nuestro local o realices tu pedido, ya que ofrecemos servicio de delivery-pickUp.</p>
 						<p class="p">¡Te esperamos!</p>
 					</div>		
 				</div>
@@ -84,12 +113,12 @@
 	</main>
 
 
-	<footer class="footer"><!-- Pie de pagina -->
+	<footer class="footer">Pie de pagina -->
 		<ul class="footer__lista">
 			<li class="footer__lista__item"><a href="https://www.facebook.com" target="_blank"><img src="./imagenes/facebook.png"></a></li>
 			<li class="footer__lista__item"><a href="https://www.instagram.com" target="_blank"><img src="./imagenes/Instagram.png"></a></li>
 			<li class="footer__lista__item"><a href="https://www.youtube.com" target="_blank"><img src="./imagenes/youtube.png"></a></li>
-		</ul>
+		</ul>		
 	</footer>
 
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

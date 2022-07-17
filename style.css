@@ -6,6 +6,10 @@
     padding: 0%;
 }
 
+body{
+    background: url("./imagenes/fondo1.jpg");
+}
+
 /* ---------------HEADER----------------- */
 a{
     text-decoration: none;
@@ -14,9 +18,9 @@ a{
 .header{
     background-color: #006E7F;
     /* position: sticky; Permite dejar el menú pegado */ 
-    top: 0;
+    /* top: 0;
     left: 0px;
-    height:fit-content;
+    height:fit-content; */
 }
 
 .header__logo__imagen img{
@@ -31,19 +35,33 @@ a{
 }
 
 .header__menu__lista__item a{
-    color: white;
+    color: white!important;
 }
 .header__menu__lista{ /*Lista del nav para modificar*/
-    list-style: none;
+   list-style: none;
     height: fit-content;
     background-color: #006E7F;
     margin: 0 auto;
-    width: fit-content;
+    /* width: fit-content; */
     font-family: 'Shadows Into Light';
+}
+
+.divheader__menu__lista{
+       /* list-style: none;
+    height: fit-content; */
+    background-color: #006E7F;
+    /* margin: 0 auto;
+    width: fit-content; */
+    font-family: 'Shadows Into Light'; 
+    font-size: 25px;
+    margin: none;
+   
 }
 
 li a:hover{ /*Sirve para ponerle sombra cuando pase el mouse*/
    text-decoration: underline;
+   color: black !important;
+  
 }
 
 /* --------------- BODY ----------------- */
