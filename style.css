@@ -1,44 +1,50 @@
 /*'font-family: 'Shadows Into Light Two', cursive;'*/
 
 /* RESET */
-*{
+* {
     margin: 0%;
     padding: 0%;
 }
 
-body{
+body {
     background: url("./imagenes/fondo1.jpg");
+    position: relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
 /* ---------------HEADER----------------- */
-a{
+a {
     text-decoration: none;
 }
 
-.header{
+.header {
     background-color: #006E7F;
-    /* position: sticky; Permite dejar el menú pegado */ 
+    /* position: sticky; Permite dejar el menú pegado */
     /* top: 0;
     left: 0px;
     height:fit-content; */
 }
 
-.header__logo__imagen img{
-    width: 100%; 
+.header__logo__imagen img {
+    width: 100%;
 }
 
-.header__menu__lista__item{ 
+.header__menu__lista__item {
     font-size: 25px;
     display: inline-block;
     margin: 15px;
     letter-spacing: 1px;
 }
 
-.header__menu__lista__item a{
-    color: white!important;
+.header__menu__lista__item a {
+    color: white !important;
 }
-.header__menu__lista{ /*Lista del nav para modificar*/
-   list-style: none;
+
+.header__menu__lista {
+    /*Lista del nav para modificar*/
+    list-style: none;
     height: fit-content;
     background-color: #006E7F;
     margin: 0 auto;
@@ -46,61 +52,63 @@ a{
     font-family: 'Shadows Into Light';
 }
 
-.divheader__menu__lista{
-       /* list-style: none;
+.divheader__menu__lista {
+    /* list-style: none;
     height: fit-content; */
     background-color: #006E7F;
     /* margin: 0 auto;
     width: fit-content; */
-    font-family: 'Shadows Into Light'; 
+    font-family: 'Shadows Into Light';
     font-size: 25px;
     margin: none;
-   
+
 }
 
-li a:hover{ /*Sirve para ponerle sombra cuando pase el mouse*/
-   text-decoration: underline;
-   color: black !important;
-  
+li a:hover {
+    /*Sirve para ponerle sombra cuando pase el mouse*/
+    text-decoration: underline;
+    color: black !important;
+
 }
 
 /* --------------- BODY ----------------- */
-h2{
+h2 {
     color: white;
     font-family: 'Shadows Into Light';
     text-decoration: underline;
     font-weight: bold;
     font-size: 40px;
     padding: 20px;
-    text-align:left;
+    text-align: left;
     margin-left: 80px;
 }
 
-#imagen_pizza{
+#imagen_pizza {
     width: 500px;
     height: 500px;
     margin-left: 100px;
 }
 
-body{
+body {
     width: 100%;
     height: fit-content;
-} 
+}
 
-.flex_container { /*Permite modificar los campos del flexcontainer*/
+.flex_container {
+    /*Permite modificar los campos del flexcontainer*/
     margin: 10px;
     padding: 20px;
     font-size: 35px;
     text-align: justify;
     font-family: 'Shadows Into Light';
     display: flex;
-  }
+}
 
-.flex_container_texto{
+.flex_container_texto {
     margin-left: 40px;
 }
 
-.p{
+.p {
     text-align: center;
     margin-top: 10px;
     font-weight: bold;
@@ -109,30 +117,46 @@ body{
 
 /* --------------- FOOTER ----------------- */
 
-.footer{
+.footer {
     background-color: #006E7F;
-    height:fit-content;
+    height: fit-content;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 
 }
 
-.footer__lista img{
+.divfooter {
+    width: 200px;
+}
+
+.footer__lista img {
     width: 50px;
     margin-left: 5px;
-    
+
 }
 
-.footer__lista{
+.footer__lista {
     list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:center;
+    /* display: flex;
+    /* flex-direction: row; */
+    /* align-items: center; */
+    /* justify-content: center; */
     height: fit-content;
+}
+
+.footeritem a {
+    color: black !important;
+}
+
+.footeritem:hover {
+    color: black;
+
 }
 
 /* --------------- CSS Menú: Page ----------------- */
 
-#imagen_helado{
+#imagen_helado {
     width: 500px;
     height: 500px;
     margin-left: 100px;
@@ -140,15 +164,24 @@ body{
 
 /* --------------- CSS Menú: Delivery-pickup ----------------- */
 
-#imagen_pizza2{
+#imagen_pizza2 {
     width: 500px;
     height: 500px;
     margin-left: 100px;
 }
 
+.botonpedidos {
+    background-color: #006E7F;
+    border-color: #006E7F;
+}
+
+.botonpedidos:hover {
+    background-color: #006E7F;
+}
+
 /* --------------- CSS Menú: Eventos ----------------- */
 
-#imagen_eventos{
+#imagen_eventos {
     width: 400px;
     height: 400px;
     margin-left: 100px;
@@ -157,17 +190,18 @@ body{
 
 
 /* --------------- CSS Menú: Contacto ----------------- */
-.flex_container_contacto { /*Permite modificar los campos del flexcontainer*/
+.flex_container_contacto {
+    /*Permite modificar los campos del flexcontainer*/
     padding: 20px;
     font-size: 20px;
     text-align: justify;
     font-family: 'Shadows Into Light';
-    display: flex;  
+    display: flex;
     justify-content: center;
 
-  }
+}
 
-.h2__contacto{
+.h2__contacto {
     color: white;
     font-family: 'Shadows Into Light';
     text-decoration: underline;
@@ -176,18 +210,18 @@ body{
     text-align: center;
 }
 
-.h2__contacto2{
+.h2__contacto2 {
     color: white;
     font-family: 'Shadows Into Light';
     text-decoration: underline;
     text-align: center;
 }
 
-.submit{
+.submit {
     margin-left: 170px;
 }
 
-.container_mapa{
+.container_mapa {
     margin-left: 60px;
 }
 
@@ -210,23 +244,24 @@ body{
     grid-auto-flow: dense;
 } */
 
-@media screen and (min-width: 200px){
-    .wide{
+@media screen and (min-width: 200px) {
+    .wide {
         grid-column: span 2;
     }
-    .tall{
+
+    .tall {
         grid-row: span 2;
     }
 }
 
-img{
+img {
     width: 100%;
     object-fit: contain;
 }
 
-.layout{
+.layout {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         'header header header header'
         'main main main aside'
         'footer footer footer footer'

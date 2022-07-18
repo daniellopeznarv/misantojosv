@@ -1,111 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis Antojos Pizzeria</title>
-    <!--Google fonts-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis Antojos Pizzeria</title>
+  <!--Google fonts-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css"><!-- Link a css -->
 </head>
 
 <body background="../imagenes/fondo1.jpg">
-    <header class="header"><!-- Encabezado del sitio -->
-          
-          <!-- <section class="header__logo"> NavBar CSS
+  <header class="header">
+    <!-- Encabezado del sitio -->
+
+    <!-- <section class="header__logo"> NavBar CSS
               <a class="header__logo__imagen" href="#">
                   <img src="../imagenes/encabezado.jpg" alt="Logo del sitio">
               </a>
           </section> -->
 
-          <nav>
-            <div class="container"> <!--NavBar Boostrap-->
-                <a class="navbar-brand" href="#">
-                  <img src="../imagenes/encabezado.jpg" alt="" width="100"  >
-                </a>
-              </div>
-        </nav>
-  
-          <section class="header__menu">
-              <nav><!--Barra de navegación (Unorder list)-->
-                  <ul class="header__menu__lista">
-                      <li class="header__menu__lista__item"><a href="../index.html">Home</a></li>
-                      <li class="header__menu__lista__item"><a href="./menu.html">Menú</a></li>
-                      <li class="header__menu__lista__item"><a href="./Delivery-retiro.html">Delivery - PickUp</a></li>
-                      <li class="header__menu__lista__item"><a href="./eventos.html">Eventos</a></li>
-                      <li class="header__menu__lista__item"><a href="./contacto.html">Contacto</a></li>
-                  </ul>
-              </nav>
-          </section>
-      </header>
+    <nav>
+      <div class="container">
+        <!--NavBar Boostrap-->
+        <a class="navbar-brand" href="#">
+          <img src="../imagenes/encabezado.jpg" alt="" width="100">
+        </a>
+      </div>
+    </nav>
 
-      <main class="main"><!-- Contenido del sitio -->
-		
-		<section class="main__comidas">
-			<h2>DELIVERY - PICKUP</h2>
-				<div class="flex_container">
-					<div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col">
-              <div class="card">
-                <img src="../imagenes/pizza1.jpeg" class="card-img-top" alt="Pizza Peperonni">
-                <div class="card-body">
-                  <h1 class="card-title">Pizza Peperonni</h1>
-                  <p class="card-text">Pepperoni bañada en nuestra salsa extra queso.</p>
-                  <p class="card-text">Precio slide $3.500</p>
+    <section class="header__menu">
+      <nav>
+        <!--Barra de navegación (Unorder list)-->
+        <ul class="header__menu__lista">
+          <li class="header__menu__lista__item"><a href="../index.html">Home</a></li>
+          <li class="header__menu__lista__item"><a href="./menu.html">Menú</a></li>
+          <li class="header__menu__lista__item"><a href="./Delivery-retiro.html">Delivery - PickUp</a></li>
+          <li class="header__menu__lista__item"><a href="./eventos.html">Eventos</a></li>
+          <li class="header__menu__lista__item"><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
 
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="../imagenes/ensaladamenu2.png" class="card-img-top" alt="Ensalada de frutas">
-                <div class="card-body">
-                  <h1 class="card-title">Ensalada de Frutas con helado</h1>
-                  <p class="card-text">Frutas, queso, crema de la casa acompañada de 2 helados</p>
-                  <p class="card-text">Precio slide $8.000</p>
+  <main class="main">
+    <!-- Contenido del sitio -->
 
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="../imagenes/pizzamenu2.png" class="card-img-top" alt="Pizza Atun">
-                <div class="card-body">
-                  <h5 class="card-title">Pizza Atún</h5>
-                  <p class="card-text">pasta de tomate, oregano, queso y Atún</p>
-                  <p class="card-text">Precio slide $4.000</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="../imagenes/helado3.png" class="card-img-top" alt="Cono helado">
-                <div class="card-body">
-                  <h1 class="card-title">Cono 1 bola</h1>
-                  <p class="card-text">Cono con una bola del sabor de tu preferencia</p>
-                  <p class="card-text">Precio $2.500</p>
+    <section class="main__comidas">
+      <h2>DELIVERY - PICKUP</h2>
+      <div class="flex_container row-1">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
 
-                </div>
+          <div class="col">
+            <div class="card">
+              <img src="../imagenes/pizza1.jpeg" class="card-img-top" alt="Pizza Peperonni">
+              <div class="card-body">
+                <h1 class="card-title fs-2">Pizza Peperonni</h1>
+                <p class="card-text fs-5">Pepperoni bañada en nuestra salsa extra queso.</p>
+                <p class="card-text fs-3">Precio slide $3.500</p>
               </div>
             </div>
           </div>
-						
-				</div>
-		</section>
-	</main>       
+
+          <div class="col">
+            <div class="card">
+              <img src="../imagenes/ensaladamenu2.png" class="card-img-top" alt="Ensalada de frutas">
+              <div class="card-body">
+                <h1 class="card-title fs-2">Ensalada de Frutas con helado</h1>
+                <p class="card-text fs-5">Frutas, queso, crema de la casa acompañada de 2 helados</p>
+                <p class="card-text fs-3">Precio slide $8.000</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="../imagenes/pizzamenu2.png" class="card-img-top" alt="Pizza Atun">
+              <div class="card-body">
+                <h1 class="card-title fs-2">Pizza Atún</h1>
+                <p class="card-text fs-5">pasta de tomate, oregano, queso y Atún</p>
+                <p class="card-text fs-3">Precio slide $4.000</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img src="../imagenes/helado3.png" class="card-img-top" alt="Cono helado">
+              <div class="card-body">
+                <h1 class="card-title fs-2">Cono 1 bola</h1>
+                <p class="card-text fs-5">Cono con una bola del sabor de tu preferencia</p>
+                <p class="card-text fs-3">Precio $2.500</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-4 mx-4">
+          <div class="row">
+
+            <div class="col-6 ">
+
+              <div class="row-1 ">
+                <button type="button" class="btn btn-primary botonpedidos">
+                  <div class="col-6 ">
+                    <i class="bi bi-bicycle"></i>
+                  </div>
+                  <div class="col-6 ">
+                    Delivery
+                  </div>
+                </button>
+              </div>
+
+            </div>
+
+            <div class="col-6">
+
+              <div class="row-1 ">
+                <button type="button" class="btn btn-primary botonpedidos">
+                  <div class="col-6">
+                    <i class="bi bi-geo-alt-fill"></i>
+                  </div>
+                  <div class="col-6 ">
+                    Recoger
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <form>
+            <div class="form-row">
+              <div class="form-group">
+                <div class="col">
+                  <label for="formGroupExampleInput" class="fs-5">Dirección de entrega</label>
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Dirección">
+                </div>
+              </div>
+            </div>
+          </form>
+          <!-- 
+          <div class="row-1 mt-2">
+            <div class="col-7 fs-2">
+              
+              <label>Dirección de entrega</label>
+            </div>
+            <div class="col-5 mt-1">
+              <input type="text" placeholder="Dirección">
+            </div>
+
+          </div> -->
+        </div>
+
+      </div>
+    </section>
+  </main>
 
 
-    <footer class="footer"><!-- Pie de pagina -->
-		<ul class="footer__lista">
-			<li class="footer__lista__item"><a href="https://www.facebook.com" target="_blank"><img src="../imagenes/facebook.png"></a></li>
-			<li class="footer__lista__item"><a href="https://www.instagram.com" target="_blank"><img src="../imagenes/instagram.png"></a></li>
-			<li class="footer__lista__item"><a href="https://www.youtube.com" target="_blank"><img src="../imagenes/youtube.png"></a></li>
-		</ul>
-	</footer>
+  <footer class="footer">
+    <!-- Pie de pagina -->
+    <ul class="footer__lista">
+      <li class="footer__lista__item"><a href="https://www.facebook.com" target="_blank"><img
+            src="../imagenes/facebook.png"></a></li>
+      <li class="footer__lista__item"><a href="https://www.instagram.com" target="_blank"><img
+            src="../imagenes/instagram.png"></a></li>
+      <li class="footer__lista__item"><a href="https://www.youtube.com" target="_blank"><img
+            src="../imagenes/youtube.png"></a></li>
+    </ul>
+  </footer>
 
 </body>
+
 </html>
